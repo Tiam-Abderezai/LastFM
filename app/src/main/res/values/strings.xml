@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LastFM</string>
+    <string name="content_description_albums_icon">albums icon</string>
+    <string name="content_description_button_search_artist">Button Search Artist</string>
+    <string name="content_description_back">Back</string>
+</resources>
