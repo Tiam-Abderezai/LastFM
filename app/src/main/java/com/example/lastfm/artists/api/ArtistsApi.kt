@@ -8,17 +8,17 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ArtistsApi {
-    @GET("?method=artist.search&api_key=6f8c9f3ce1eba7779350b7880f8af850&format=json")
+    @GET("?method=artist.search&api_key=&format=json")
     suspend fun searchArtists(
         @Query("artist") artist: String,
     ): Response<ArtistsResponse>
 
-    @GET("?method=artist.gettopalbums&api_key=6f8c9f3ce1eba7779350b7880f8af850&format=json&format=json")
+    @GET("?method=artist.gettopalbums&api_key=&format=json&format=json")
     suspend fun getTopAlbums(
         @Query("artist") artist: String
     ): Response<TopAlbumsResponse>
 
-    @GET("?method=artist.gettoptracks&artist&api_key=6f8c9f3ce1eba7779350b7880f8af850&format=json&format=json")
+    @GET("?method=artist.gettoptracks&artist&api_key=&format=json&format=json")
     suspend fun getTracks(
         @Query("artist") artist: String
     ): Response<TopTracksResponse>
